@@ -59,7 +59,7 @@
 }
 
 .backgorund_image {
-  width: 100%;
+  width: inherit;
   height: 990px;
   object-fit: cover;
 }
