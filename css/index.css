@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #E74C3C;
+}
+
+@font-face 
+{
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Bold.ttf") format("ttf") 
+  url("/assets/fonts/OpenSans-Light.ttf") format("ttf")
+  url("/assets/fonts/OpenSans-Regular.ttf") format("ttf")
+}
+
+*,html,body
+{
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+.backgorund {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.backgorund_image {
+  width: 100%;
+  height: 990px;
+  object-fit: cover;
+}
+
+.nav 
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav_item:not(:last-child)
+{
+  margin-right: 58px;
+}
+
+.nav_link:hover 
+{
+  text-shadow: 0 0 .9px var(--primary-color), 0 0 .9px var(--primary-color);
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 17px;
+}
+
+.nav_link 
+{
+  color: #fff;
+  text-align:center;
+  text-transform: uppercase;
+  display:inline-block;
+  text-decoration: none;
+  padding: 18px 0;
+}
+
+.hero 
+{
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  min-height: 858px;
+  margin: 0 auto;
+}
+
+.legend
+{
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero_title
+{
+  margin-bottom: 46px;
+  font-size: 96px;
+  font-weight: bold;
+}
+
+.separator
+{
+  margin-bottom: 46px;
+}
+
+.hero_description
+{
+  font-size: 19px;
+  text-align: center;
+  width: 600px;
+  line-height: 32px;
+}
+
+.hero_buttons 
+{
+  margin-top: 70px;
+}
+
+.hero_button, .hero_button-primary {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 225px;
+  height: 56px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 56px;
+}
+
+.hero_button-primary
+{
+  background-color: var(--primary-color);
+  margin-right: 24px;
+}
+
+.hero_button
+{
+  border: 1px solid #fff;
+}
+
+.hero_form_button
+{
+  display: block;
+  position: absolute;
+  bottom: -38px;
+}
