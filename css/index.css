@@ -2,13 +2,36 @@
   --primary-color: #E74C3C;
 }
 
-@font-face 
-{
+@font-face {
   font-family: "Open Sans";
-  src: url("/assets/fonts/OpenSans-Bold.ttf") format("ttf") 
-  url("/assets/fonts/OpenSans-Light.ttf") format("ttf")
-  url("/assets/fonts/OpenSans-Regular.ttf") format("ttf")
+  src: url("/assets/fonts/OpenSans-Light.ttf") format("ttf");
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Open Sans Pro";
+  src: url("/assets/fonts/SourceSansPro-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
 
 *,html,body
 {
@@ -81,7 +104,7 @@
   align-items: center;
   justify-content: center;
   max-width: 1170px;
-  min-height: 858px;
+  min-height: 910px;
   margin: 0 auto;
 }
 
@@ -89,14 +112,14 @@
 {
   margin-bottom: 50px;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .hero_title
 {
   margin-bottom: 46px;
   font-size: 96px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .separator
@@ -120,7 +143,7 @@
 .hero_button, .hero_button-primary {
   display: inline-block;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   border-radius: 5px;
   width: 225px;
@@ -146,4 +169,88 @@
   display: block;
   position: absolute;
   bottom: -38px;
+}
+
+.advantages_list
+{
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 442px;
+}
+
+.advantages_item_icon
+{
+  transition: .51s;
+}
+
+.advantages_separator
+{
+  display: inline-block;
+  border-bottom: 1px solid #999999;
+  width: 40px;
+  margin-bottom: 18px;
+}
+
+.advantages_item 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 56px;
+}
+
+.advantages_item:hover .advantages_item_title
+{
+  color:#E74C3C;
+}
+
+.advantages_item:hover .icon_container
+{
+  border-color: #E74C3C;
+  transform: rotate(45deg);
+  transition: .5s;
+}
+
+.advantages_item:hover .advantages_item_icon
+{
+  transform: rotate(-45deg);
+  transition: .51s;
+}
+
+.advantages_item:last-child
+{
+  margin-right: 0px;
+}
+
+.advantages_item_title
+{
+  margin-bottom: 20px;
+  font-size: 18pt;
+  font-weight: 600;
+  color: #6a6a6a;
+}
+
+.advantages_description
+{
+  text-align: center;
+  font-size: 12pt;
+  color: #999999;
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  line-height: 20pt;
+}
+
+.icon_container
+{
+  width: 72px;
+  height: 72px;
+  border: 1px solid #999999;
+  margin-bottom: 32px;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
