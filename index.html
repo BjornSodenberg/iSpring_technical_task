@@ -10,12 +10,16 @@
   </head>
   <body>
     <div class="backgorund">
-      <img src="/assets/images/Background.png" alt="background" class="backgroung_image">
-      <a href="/" class="hero_form_button">
-        <img src="/assets/images/Anchor.svg" alt="to form"/>
+      <img
+        src="/assets/images/Background.png"
+        alt="background"
+        class="backgorund_image"
+      />
+      <a href="#feedback" class="hero_form_button">
+        <img src="/assets/images/icons/anchor.svg" alt="to form" />
       </a>
     </div>
-    <header class="header">
+    <header class="header" id="header">
       <a href="/" class="logo"
         ><img src="/assets/images/Logo.svg" alt="bino logo"
       /></a>
@@ -49,88 +53,181 @@
     <section class="advantages">
       <ul class="advantages_list">
         <li class="advantages_item">
-          <img src="" alt="sleek design" />
+          <div class="icon_container">
+            <img
+              src="/assets/images/icons/sleek-desing.svg"
+              alt="sleek design"
+              class="advantages_item_icon"
+            />
+          </div>
+          <h3 class="advantages_item_title">SLEEK DESIGN</h3>
           <span class="advantages_separator"></span>
-          <p class="advantages_description"></p>
+          <p class="advantages_description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry.
+          </p>
         </li>
         <li class="advantages_item">
-          <img src="" alt="clean code" />
+          <div class="icon_container">
+            <img
+              src="/assets/images/icons/clean-code.svg"
+              alt="clean code"
+              class="advantages_item_icon"
+            />
+          </div>
+          <h3 class="advantages_item_title">CLEAN CODE</h3>
           <span class="advantages_separator"></span>
-          <p class="advantages_description"></p>
+          <p class="advantages_description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry.
+          </p>
         </li>
         <li class="advantages_item">
-          <img src="" alt="creative ideas" />
+          <div class="icon_container">
+            <img
+              src="/assets/images/icons/creative-ideas.svg"
+              alt="creative ideas"
+              class="advantages_item_icon"
+            />
+          </div>
+          <h3 class="advantages_item_title">CREATIVE IDEAS</h3>
           <span class="advantages_separator"></span>
-          <p class="advantages_description"></p>
+          <p class="advantages_description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry.
+          </p>
         </li>
         <li class="advantages_item">
-          <img src="" alt="free support" />
+          <div class="icon_container">
+            <img
+              src="/assets/images/icons/free-support.svg"
+              alt="free support"
+              class="advantages_item_icon"
+            />
+          </div>
+          <h3 class="advantages_item_title">FREE SUPPORT</h3>
           <span class="advantages_separator"></span>
-          <p class="advantages_description"></p>
+          <p class="advantages_description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry.
+          </p>
         </li>
       </ul>
     </section>
     <section class="services">
-      <h2 class="services_title">OUR SERVICES</h2>
-      <ul class="services_list">
-        <li class="services_item">
-          <h3 class="services_item_title">WEB DESIGN</h3>
-          <p class="services_item_description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </p>
-          <img src="" alt="web design" />
-        </li>
-        <li class="services_item">
-          <h3 class="services_item_title">PRINT DESIGN</h3>
-          <p class="services_item_description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </p>
-          <img src="" alt="print desing" />
-        </li>
-        <li class="services_item">
-          <h3 class="services_item_title">PHOTOGRAPHY</h3>
-          <p class="services_item_description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever
-          </p>
-          <img src="" alt="photography" />
-        </li>
-      </ul>
+      <div class="left_column">
+        <div class="services_header">
+          <h2 class="services_title">OUR SERVICES</h2>
+          <span class="services_separator"></span>
+        </div>
+        <ul class="services_list">
+          <li class="services_item">
+            <div class="service_item_content">
+              <h3 class="services_item_title">WEB DESIGN</h3>
+              <p class="services_item_description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever
+              </p>
+            </div>
+            <div class="service_item_icon">
+              <img src="assets/images/icons/web-design.svg" alt="web design" />
+            </div>
+          </li>
+          <li class="services_item">
+            <div class="service_item_content">
+              <h3 class="services_item_title">PRINT DESIGN</h3>
+              <p class="services_item_description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever
+              </p>
+            </div>
+            <div class="service_item_icon">
+              <img src="assets/images/icons/print-design.svg" alt="print desing" />
+            </div>
+          </li>
+          <li class="services_item">
+            <div class="service_item_content">
+              <h3 class="services_item_title">PHOTOGRAPHY</h3>
+              <p class="services_item_description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever
+              </p>
+            </div>
+            <div class="service_item_icon">
+              <img src="assets/images/icons/photography.svg" alt="photography" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="right_column">
+      </div>
     </section>
-    <section class="feedback_form">
-      <h2 class="feedback_title">KEEP IN TOUCH</h2>
-      <p class="feedback_description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-      <img src="assets/images/Separator.svg" alt="separator" />
+    <section class="feedback_form" id="feedback">
+      <header class="feedback_header">
+        <h2 class="feedback_title">KEEP IN TOUCH</h2>
+        <p class="feedback_description">
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
+        </p>
+        <img src="assets/images/feedback-separator.svg" alt="separator" class="feedback_separator"/>
+      </header>
+      <div class="feedback_content">
+        <div class="feedback_contacts">
+          <ul class="feedback_contacts_list">
+            <li class="feedback_contacts_item">
+              <address>
+                <h3>OUR ADDRESS</h3>
+                <a href="/">House #13, Street road, Sydney<br>2310 Australia</a>
+              </address>
+            </li>
+            <li class="feedback_contacts_item">
+              <h3>CALL US</h3>
+              <a href="tel:+ 880 168 109 1425">+ 880 168 109 1425</a>
+              <br>
+              <a href="tel:+ 0216809142">+ 0216809142</a>
+            </li>
+            <li class="feedback_contacts_item">
+              <h3>EMAIL US</h3>
+              <a href="mailto:contactus@email.com">contactus@email.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="feedback_fields">
+          <form action="" class="form">
+            <input type="text" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" cols="30" rows="4" placeholder="Message"></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
     </section>
-    <section class="offer">
-      <h2 class="offer_title">Let's Get Started Now. It's FREE!</h2>
-      <p class="offer_description">
+    <section class="promo">
+      <h2 class="promo_title">Let's Get Started Now. <span>It's FREE!</span></h2>
+      <p class="promo_description">
         30 day free trial. Free plan allows up to 2 projects. Pay if you need
         more. Cancel anytime. No catches.
       </p>
-      <a href="/">START FREE TRIAL</a>
+      <a href="/" class="promo_button">START FREE TRIAL</a>
     </section>
-    <footer>
-      <ul class="socials_list">
-        <li class="socials_item"><img src="/" alt="facebook" /></li>
-        <li class="socials_item"><img src="/" alt="twitter" /></li>
-        <li class="socials_item"><img src="/" alt="facebook" /></li>
-        <li class="socials_item"><img src="/" alt="google plus" /></li>
-        <li class="socials_item"><img src="/" alt="linkedin" /></li>
-        <li class="socials_item"><img src="/" alt="skype" /></li>
-        <li class="socials_item"><img src="/" alt="vine" /></li>
-        <li class="socials_item"><img src="/" alt="telegram" /></li>
-      </ul>
-      <p>Kazi Efran c All Rights Reserved</p>
-      <a href="/"><img src="" alt="to home" /></a>
+    <footer class="footer">
+      <div class="footer_content">
+        <ul class="socials_list">
+          <li class="socials_item"><img src="assets/images/icons/socials/facebook.svg" alt="facebook" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/twitter.svg" alt="twitter" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/rss.svg" alt="rss" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/google-plus.svg" alt="google plus" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/linkedin.svg" alt="linkedin" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/skype.svg" alt="skype" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/vimo.svg" alt="vimeo" /></li>
+          <li class="socials_item"><img src="assets/images/icons/socials/tumblr.svg" alt="tumblr" /></li>
+        </ul>
+        <p class="footer_author">Kazi Efran c All Rights Reserved</p>
+      </div>
+      <a href="#header" class="button_to_home"><img src="assets/images/icons/to-home.svg" alt="to home" /></a>
     </footer>
   </body>
 </html>
