@@ -216,12 +216,12 @@
 
 .advantages_item:hover .advantages_item_title
 {
-  color:#E74C3C;
+  color:var(--primary-color);
 }
 
 .advantages_item:hover .icon_container
 {
-  border-color: #E74C3C;
+  border-color: var(--primary-color);
   transform: rotate(45deg);
   transition: .5s;
 }
@@ -288,6 +288,7 @@
 {
   background: url('/assets/images/Layer\ 3.png');
   width: 50%;
+  background-color: #202020;
 }
 
 .services_title
@@ -311,7 +312,7 @@
 {
   height: 36px;
   width: 6px;
-  background-color: #E74C3C;
+  background-color: var(--primary-color);
   margin-right: 80px;
 }
 
@@ -338,7 +339,7 @@
 
 .services_item_title
 {
-  color: #E74C3C;
+  color: var(--primary-color);
   font-family: "Open Sans Pro","Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -358,4 +359,113 @@
 {
   position: absolute;
   right: -37px;
+}
+
+.promo
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+  color: #fff;
+  background-color: #202020;
+  position: relative;
+  width: 100%;
+  background: url('/assets/images/background-promo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.promo_title,
+.promo_description,
+.promo_button
+{
+  z-index: 1;
+}
+
+.promo_title
+{
+  font-size: 36pt;
+  margin-bottom: 20px;
+}
+
+.promo_title span
+{
+  font-weight: 700;
+}
+
+.promo_description
+{
+  font-size: 18pt;
+  margin-bottom: 68px;
+}
+
+.promo_button
+{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 225px;
+  height: 56px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 56px;
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.footer
+{
+  position: relative;
+  background-color: #202020;
+}
+
+.footer_content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.socials_list
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 34px 0;
+  
+}
+
+.socials_item
+{
+  width: 21px;
+  height: 21px;
+  margin-right: 16px;
+}
+
+.socials_item:last-child
+{
+  margin-right: 0;
+}
+
+.socials_item > img
+{
+  filter: invert(69%) sepia(1%) saturate(0%) hue-rotate(117deg) brightness(88%) contrast(92%);
+}
+
+.footer_author
+{
+  margin: 34px 0;
+  color: #7b7b7b;
+}
+
+.button_to_home
+{
+  position: absolute;
+  right: 56px;
+  top: -31px;
 }
