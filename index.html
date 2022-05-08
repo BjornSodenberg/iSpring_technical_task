@@ -7,18 +7,51 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>BINO</title>
+    <script src="/js/shape.js" defer></script>
+    <script src="/js/slider.js" defer></script>
   </head>
   <body>
-    <div class="backgorund">
-      <img
-        src="/assets/images/Background.png"
-        alt="background"
-        class="backgorund_image"
-      />
+    <div class="background" id="base">
+      <div class="shape"></div>
+      <div class="carousel" data-carousel>
+        <button
+          class="carousel-button prev"
+          data-carousel-button="prev"
+        ></button>
+        <button
+          class="carousel-button next"
+          data-carousel-button="next"
+        ></button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img
+              src="/assets/images/Layer 5.png"
+              alt=""
+              class="backgorund_image"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="/assets/images/mountains1.jpg"
+              alt=""
+              class="backgorund_image"
+            />
+          </li>
+          <li class="slide">
+            <img
+              src="/assets/images/mountains2.jpg"
+              alt=""
+              class="backgorund_image"
+            />
+          </li>
+        </ul>
+      </div>
+
       <a href="#feedback" class="hero_form_button">
         <img src="/assets/images/icons/anchor.svg" alt="to form" />
       </a>
     </div>
+
     <header class="header" id="header">
       <a href="/" class="logo"
         ><img src="/assets/images/Logo.svg" alt="bino logo"
@@ -126,8 +159,8 @@
               <h3 class="services_item_title">WEB DESIGN</h3>
               <p class="services_item_description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
               </p>
             </div>
             <div class="service_item_icon">
@@ -139,12 +172,15 @@
               <h3 class="services_item_title">PRINT DESIGN</h3>
               <p class="services_item_description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
               </p>
             </div>
             <div class="service_item_icon">
-              <img src="assets/images/icons/print-design.svg" alt="print desing" />
+              <img
+                src="assets/images/icons/print-design.svg"
+                alt="print desing"
+              />
             </div>
           </li>
           <li class="services_item">
@@ -152,26 +188,33 @@
               <h3 class="services_item_title">PHOTOGRAPHY</h3>
               <p class="services_item_description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever
               </p>
             </div>
             <div class="service_item_icon">
-              <img src="assets/images/icons/photography.svg" alt="photography" />
+              <img
+                src="assets/images/icons/photography.svg"
+                alt="photography"
+              />
             </div>
           </li>
         </ul>
       </div>
-      <div class="right_column">
-      </div>
+      <div class="right_column"></div>
     </section>
     <section class="feedback_form" id="feedback">
       <header class="feedback_header">
         <h2 class="feedback_title">KEEP IN TOUCH</h2>
         <p class="feedback_description">
-          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
+          Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+          suscipit, dictum quam nec.
         </p>
-        <img src="assets/images/feedback-separator.svg" alt="separator" class="feedback_separator"/>
+        <img
+          src="assets/images/feedback-separator.svg"
+          alt="separator"
+          class="feedback_separator"
+        />
       </header>
       <div class="feedback_content">
         <div class="feedback_contacts">
@@ -179,13 +222,15 @@
             <li class="feedback_contacts_item">
               <address>
                 <h3>OUR ADDRESS</h3>
-                <a href="/">House #13, Street road, Sydney<br>2310 Australia</a>
+                <a href="/"
+                  >House #13, Street road, Sydney<br />2310 Australia</a
+                >
               </address>
             </li>
             <li class="feedback_contacts_item">
               <h3>CALL US</h3>
               <a href="tel:+ 880 168 109 1425">+ 880 168 109 1425</a>
-              <br>
+              <br />
               <a href="tel:+ 0216809142">+ 0216809142</a>
             </li>
             <li class="feedback_contacts_item">
@@ -196,17 +241,24 @@
         </div>
         <div class="feedback_fields">
           <form action="" class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" cols="30" rows="4" placeholder="Message"></textarea>
+            <input type="text" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea
+              name="message"
+              cols="30"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
             <button type="submit">SEND MESSAGE</button>
           </form>
         </div>
       </div>
     </section>
     <section class="promo">
-      <h2 class="promo_title">Let's Get Started Now. <span>It's FREE!</span></h2>
+      <h2 class="promo_title">
+        Let's Get Started Now. <span>It's FREE!</span>
+      </h2>
       <p class="promo_description">
         30 day free trial. Free plan allows up to 2 projects. Pay if you need
         more. Cancel anytime. No catches.
@@ -216,18 +268,45 @@
     <footer class="footer">
       <div class="footer_content">
         <ul class="socials_list">
-          <li class="socials_item"><img src="assets/images/icons/socials/facebook.svg" alt="facebook" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/twitter.svg" alt="twitter" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/rss.svg" alt="rss" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/google-plus.svg" alt="google plus" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/linkedin.svg" alt="linkedin" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/skype.svg" alt="skype" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/vimo.svg" alt="vimeo" /></li>
-          <li class="socials_item"><img src="assets/images/icons/socials/tumblr.svg" alt="tumblr" /></li>
+          <li class="socials_item">
+            <img
+              src="assets/images/icons/socials/facebook.svg"
+              alt="facebook"
+            />
+          </li>
+          <li class="socials_item">
+            <img src="assets/images/icons/socials/twitter.svg" alt="twitter" />
+          </li>
+          <li class="socials_item">
+            <img src="assets/images/icons/socials/rss.svg" alt="rss" />
+          </li>
+          <li class="socials_item">
+            <img
+              src="assets/images/icons/socials/google-plus.svg"
+              alt="google plus"
+            />
+          </li>
+          <li class="socials_item">
+            <img
+              src="assets/images/icons/socials/linkedin.svg"
+              alt="linkedin"
+            />
+          </li>
+          <li class="socials_item">
+            <img src="assets/images/icons/socials/skype.svg" alt="skype" />
+          </li>
+          <li class="socials_item">
+            <img src="assets/images/icons/socials/vimo.svg" alt="vimeo" />
+          </li>
+          <li class="socials_item">
+            <img src="assets/images/icons/socials/tumblr.svg" alt="tumblr" />
+          </li>
         </ul>
         <p class="footer_author">Kazi Efran c All Rights Reserved</p>
       </div>
-      <a href="#header" class="button_to_home"><img src="assets/images/icons/to-home.svg" alt="to home" /></a>
+      <a href="#header" class="button_to_home"
+        ><img src="assets/images/icons/to-home.svg" alt="to home"
+      /></a>
     </footer>
   </body>
 </html>
