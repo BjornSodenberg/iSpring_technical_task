@@ -1,8 +1,12 @@
 function clickHandler(e) {
-  e.preventDefault();
+  if (e.preDefault) {
+    e.preventDefault()
+  } else {
+    //IE 11 don't have preventDefault
+    e.returnValue = false
+  };
   const href = this.getAttribute("href");
   const offsetTop = document.querySelector(href).offsetTop;
-
   scroll({
     top: offsetTop,
     behavior: "smooth"
@@ -12,7 +16,7 @@ function clickHandler(e) {
 (function(){
   const buttons = document.querySelectorAll("#scroll");
 
-  buttons.forEach(button => {
-    button.addEventListener('click', clickHandler)
-  })
+  for (let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', clickHandler)
+  }
 })()
