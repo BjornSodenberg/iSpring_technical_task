@@ -4,47 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>BINO</title>
     <script src="/js/shape.js" defer></script>
     <script src="/js/slider.js" defer></script>
     <script src="/js/smooth-scroll.js" defer></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script>
+
+        window.addEventListener('click', function(e){   
+          const x = document.getElementById("menu");
+          const button = document.getElementById('burger');
+          if (document.getElementById('burger').contains(e.target)){
+            // Clicked in box
+          } else{
+            if (x.style.display === "flex") {
+              x.style.display = "none";
+              x.classList.remove("nav_burger");
+              x.classList.add("nav");
+              button.style.display = "block";
+            }
+          }
+        });
+    </script>
   </head>
   <body>
     <div class="background" id="base">
       <div class="shape"></div>
-      <div class="carousel" data-carousel>
+      <div class="carousel" data-carousel="data-carousel">
         <button
           class="carousel-button prev"
           data-carousel-button="prev"
+          id="left-button-slider"
         ></button>
         <button
           class="carousel-button next"
           data-carousel-button="next"
+          id="right-button-slider"
         ></button>
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img
-              src="/assets/images/Layer 5.png"
-              alt=""
-              class="backgorund_image"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="/assets/images/mountains1.jpg"
-              alt=""
-              class="backgorund_image"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="/assets/images/mountains2.jpg"
-              alt=""
-              class="backgorund_image"
-            />
-          </li>
+        <ul data-slides="data-slides">
+          <li class="slide" id="first_slide" data-active="data-active"></li>
+          <li class="slide" id="second_slide"></li>
+          <li class="slide" id="third_slide"></li>
         </ul>
       </div>
 
@@ -57,7 +60,7 @@
       <a href="/" class="logo"
         ><img src="/assets/images/Logo.svg" alt="bino logo"
       /></a>
-      <ul class="nav">
+      <ul class="nav" id="menu">
         <li class="nav_item"><a href="" class="nav_link">HOME</a></li>
         <li class="nav_item"><a href="" class="nav_link">ABOUT US</a></li>
         <li class="nav_item"><a href="" class="nav_link">PORTFOLIO</a></li>
@@ -66,6 +69,25 @@
         <li class="nav_item"><a href="" class="nav_link">BLOG</a></li>
         <li class="nav_item"><a href="" class="nav_link">CONTACT</a></li>
       </ul>
+      <a href="javascript:void(0);" class="burger" onclick="myFunction()" id="burger">
+        <img src="/assets/images/icons/burger.svg" alt="">
+      </a>
+      <script>
+        function myFunction() {
+          const x = document.getElementById("menu");
+          const button = document.getElementById("burger");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+            x.classList.remove("nav_burger");
+            x.classList.add("nav");
+          } else {
+            x.style.display = "flex";
+            button.style.display = "none";
+            x.classList.add("nav_burger");
+            x.classList.remove("nav");
+          }
+        }
+        </script>
     </header>
     <section class="hero">
       <p class="legend">Our Clients Are Our First Priority</p>
@@ -241,7 +263,7 @@
           </ul>
         </div>
         <div class="feedback_fields">
-          <form action="" class="form">
+          <form action="main.php" class="form" method="post">
             <input type="text" placeholder="Name" />
             <input type="email" name="email" placeholder="Email" />
             <input type="text" name="subject" placeholder="Subject" />
@@ -270,37 +292,44 @@
       <div class="footer_content">
         <ul class="socials_list">
           <li class="socials_item">
-            <img
-              src="assets/images/icons/socials/facebook.svg"
-              alt="facebook"
-            />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/facebook.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img src="assets/images/icons/socials/twitter.svg" alt="twitter" />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/twitter.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img src="assets/images/icons/socials/rss.svg" alt="rss" />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/rss.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img
-              src="assets/images/icons/socials/google-plus.svg"
-              alt="google plus"
-            />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/google-plus.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img
-              src="assets/images/icons/socials/linkedin.svg"
-              alt="linkedin"
-            />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/linkedin.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img src="assets/images/icons/socials/skype.svg" alt="skype" />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/skype.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img src="assets/images/icons/socials/vimo.svg" alt="vimeo" />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/vimeo.svg" alt="">
+            </a>
           </li>
           <li class="socials_item">
-            <img src="assets/images/icons/socials/tumblr.svg" alt="tumblr" />
+            <a href="/" class="socials_item_link">
+              <img src="/assets/images/icons/socials/tumblr.svg" alt="">
+            </a>
           </li>
         </ul>
         <p class="footer_author">Kazi Efran c All Rights Reserved</p>
