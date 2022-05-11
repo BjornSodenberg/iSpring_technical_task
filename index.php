@@ -2,15 +2,24 @@
 $user = "example_user";
 $password = "password";
 $database = "example_database";
-$table = "todo_list";
+$table = "feddbacks";
+
+$formName = $_POST['name'];
+$formEmail = $_POST['email'];
+$formSubject = $_POST['subject'];
+$formMessage = $_POST['message'];
 
 try {
   $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
-  echo "<h2>TODO</h2><ol>"; 
-  foreach($db->query("SELECT content FROM $table") as $row) {
-    echo "<li>" . $row['content'] . "</li>";
-  }
-  echo "</ol>";
+  $db->query("
+    INSERT INTO $database.$table (name, email, subject, message) 
+    VALUES (
+        '$formName',    
+        '$formEmail',    
+        '$formSubject',    
+        '$formMessage',    
+    )
+  ");
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
