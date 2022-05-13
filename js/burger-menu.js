@@ -8,8 +8,8 @@ hamburger.addEventListener('click', function(){
 
 window.addEventListener('click', function(e){   
   if (!document.getElementById('burger').contains(e.target) && !document.getElementById('menu').contains(e.target)){
-    hamburger.classList.toggle('active');
-    menu.classList.toggle('active');
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
   }
 });
 
