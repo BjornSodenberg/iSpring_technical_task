@@ -1,0 +1,55 @@
+.promo
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 480px;
+  color: #fff;
+  background-color: #202020;
+  position: relative;
+  width: 100%;
+  min-width: 746px;
+  background: url('/assets/images/background-promo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.promo_title,
+.promo_description,
+.promo_button
+{
+  z-index: 1;
+}
+
+.promo_title
+{
+  font-size: 36pt;
+  margin-bottom: 20px;
+}
+
+.promo_title span
+{
+  font-weight: 700;
+}
+
+.promo_description
+{
+  font-size: 18pt;
+  margin-bottom: 68px;
+}
+
+.promo_button
+{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 225px;
+  height: 56px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 56px;
+  background-color: #E74C3C;
+  color: #fff;
+}
