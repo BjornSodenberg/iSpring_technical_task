@@ -158,3 +158,27 @@
 {
   margin-bottom: 66px;
 }
+
+.msg
+{
+  display: none;
+  margin-top: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.msg.success
+{
+  display: block;
+  background-color: #28a745;
+  opacity: .7;
+}
+
+.msg.error
+{
+  display: block;
+  background-color: #dc3545;
+  opacity: .7;
+}
