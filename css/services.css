@@ -1,0 +1,95 @@
+.services
+{
+  height: 768px;
+  min-width: 746px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left_column 
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #1f1f1f;
+  justify-content: center;
+  position: relative;
+}
+
+.right_column
+{
+  background: url('/assets/images/Layer\ 3.png');
+  width: 50%;
+  background-color: #202020;
+}
+
+.services_title
+{
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.services_header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 76px;
+}
+
+.services_separator
+{
+  height: 36px;
+  width: 6px;
+  background-color: #E74C3C;
+  margin-right: 80px;
+}
+
+.services_list
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.services_item
+{
+  text-align: right;
+  margin-right: 80px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: row;
+  max-width: 655px;
+}
+
+.services_item:last-child
+{
+  margin-bottom: 0;
+}
+
+.services_item_title
+{
+  color: #E74C3C;
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.services_item_description
+{
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  line-height: 29px;
+}
+
+.service_item_icon
+{
+  position: absolute;
+  right: -37px;
+}

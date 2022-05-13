@@ -1,0 +1,160 @@
+
+.feedback_header
+{
+  text-align: center;
+}
+
+.feedback_form
+{
+  background-color: #f4f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1038px;
+  min-width: 746px;
+}
+
+.feedback_content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.feedback_contacts,
+.feedback_fields
+{
+  padding: 98px 90px;
+}
+
+.feedback_contacts
+{
+  background-color: #fff;
+  margin-right: 28px;
+}
+
+.feedback_contacts_item
+{
+  margin-bottom: 70px;
+}
+
+.feedback_contacts_item:last-child
+{
+  margin-bottom: 0px;
+}
+
+.feedback_contacts_item h3
+{
+  color: #E74C3C;
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.feedback_contacts_item a
+{
+  color: #999999;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.feedback_fields
+{
+  background-color: #fff;
+}
+
+.form_control
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.form_control input
+{
+  color: #000;
+}
+
+.form_control.error small{
+  visibility: visible;
+  color: #E74C3C;
+}
+
+.form_control small
+{
+  margin-top: 4px;
+  visibility: hidden;
+  color: #E74C3C;
+}
+
+.form
+{
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+}
+
+.form input:focus,
+.form textarea:focus
+{
+  border-bottom: 1px solid #E74C3C;
+  transition: .5s;
+}
+
+.form input,
+.form textarea
+{
+  border: none;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 20px;
+  
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  transition: 0.5s;
+  overflow: auto;
+}
+
+.form input::placeholder,
+.form textarea::placeholder
+{
+  color: #999999;
+}
+
+.form button
+{
+  background-color: #E74C3C;
+  border: none;
+  padding: 17px 26px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.feedback_title
+{
+  font-family: "Open Sans Pro","Open Sans", sans-serif;
+  font-size: 36px;
+  color: #6a6a6a;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.feedback_description
+{
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 26px;
+}
+
+.feedback_separator
+{
+  margin-bottom: 66px;
+}

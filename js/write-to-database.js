@@ -5,6 +5,13 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
     //IE 11 don't have preventDefault
     e.returnValue = false
   };
+
+  const canSendForm = checkCanSendForm();
+  console.log("🚀 ~ file: write-to-database.js ~ line 10 ~ document.querySelector ~ canSendForm", canSendForm)
+  if (!canSendForm) {
+    return;
+  }
+
   const data = new URLSearchParams();
   const formData = new FormData(document.querySelector('form'))
   for (var pair of formData.entries()) {
@@ -22,3 +29,14 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
     document.querySelector('.msg').innerHTML = 'Sorry. We have a problem :(';
   })
 })
+
+function checkCanSendForm() {
+  const errorFields = document.querySelectorAll('small');
+  for(error of errorFields){
+    if (error.innerText !== '') {
+      return false;
+    }
+  }
+
+  return true;
+}
