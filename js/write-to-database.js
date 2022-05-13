@@ -1,9 +1,9 @@
 document.querySelector('.feedback_fields').addEventListener('submit', function(e){
   if (e.preDefault) {
-    e.preventDefault()
+    e.preventDefault();
   } else {
     //IE 11 don't have preventDefault
-    e.returnValue = false
+    e.returnValue = false;
   };
 
   const canSendForm = checkCanSendForm();
@@ -12,7 +12,7 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
   }
 
   const data = new URLSearchParams();
-  const formData = new FormData(document.querySelector('form'))
+  const formData = new FormData(document.querySelector('form'));
   for (var pair of formData.entries()) {
     data.append(pair[0],pair[1]);
   }
@@ -30,7 +30,6 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
       document.querySelector('.msg').innerHTML = 'This email is already being used';
       document.querySelector('.msg').className = 'msg error';
     }
-    
   })
 
   document.querySelector('form').reset();
