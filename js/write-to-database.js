@@ -7,7 +7,6 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
   };
 
   const canSendForm = checkCanSendForm();
-  console.log("🚀 ~ file: write-to-database.js ~ line 10 ~ document.querySelector ~ canSendForm", canSendForm)
   if (!canSendForm) {
     return;
   }
@@ -24,10 +23,18 @@ document.querySelector('.feedback_fields').addEventListener('submit', function(e
   }).then(function(response){
     if (response.status === 200) {
       document.querySelector('.msg').innerHTML = 'Success send your feedback';
+      document.querySelector('.msg').className = 'msg success';
     }
-  }).catch(function(error){
-    document.querySelector('.msg').innerHTML = 'Sorry. We have a problem :(';
+
+    if (response.status === 500) {
+      document.querySelector('.msg').innerHTML = 'This email is already being used';
+      document.querySelector('.msg').className = 'msg error';
+    }
+    
   })
+
+  document.querySelector('form').reset();
+
 })
 
 function checkCanSendForm() {

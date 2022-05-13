@@ -19,6 +19,14 @@ $conn = new mysqli($servername, $user, $password, $database);
     die("Connection failed: " . $conn->connect_error);
   }
 
+$sql_exist = "SELECT `email` FROM $table WHERE `email` = '$formEmail'";
+
+$select = $conn->query($sql_exist);
+
+if(mysqli_num_rows($select)) {
+  throw new Exception('This email is already being used');
+}
+
 //create sql request to database
 $sql = "INSERT INTO $table (name, email, subject, message) VALUES (
   '$formName', '$formEmail', '$formSubject', '$formMessage'
